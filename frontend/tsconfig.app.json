@@ -7,7 +7,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    "types": ["vite-plugin-svgr/client"],
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -17,6 +17,23 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* Aboluite path import  */
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@routes/*": ["src/routes/*"],
+      "@services/*": ["src/services/*"],
+      "@types/*": ["src/types/*"],
+      "@types": ["src/types/index"],
+      "@store/*": ["src/store/*"],
+      "@styles/*": ["src/styles/*"],
+      "@util/*": ["src/util/*"],
+      "@validations/*": ["src/validations/*"]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
