@@ -29,7 +29,7 @@ The Products page displays a list of all products in the system. you can perform
   2. Change the quantity of added products.
   3. Remove products from the cart.
   4. show the total
-  5- cart page has a checkout button to finalize the purchase.
+  5. cart page has a checkout button to finalize the purchase.
      
 ## Wishlist Page :
 The wishlist page lists all your favorite products in the system. 
