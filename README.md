@@ -2,6 +2,9 @@
 The eCommerce Project is a web application built with [typescript , react and json server as backend ] where users can browse categories , products, add items to the cart,
 make purchases and can add the items to the wishlist.
 
+## live Demo :
+https://www.youtube.com/watch?v=QgQCosCiqo0&t=8s
+
 # Installation
 To run the eCommerce Project, Follow these steps to install and set up the project:
    1. Clone the repository
