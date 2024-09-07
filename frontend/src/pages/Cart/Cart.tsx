@@ -18,7 +18,9 @@ const Cart = () => {
   const { user, token } = useAppSelector((state) => state.auth);
   const { items } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
-  const itemsId = Object.keys(items ? items[user?.id] : []);
+  const itemsId = Object.keys(items).includes(user?.id.toString())
+    ? Object.keys(items[user?.id])
+    : [];
   const concatenatedItemsId =
     itemsId.length > 0
       ? '?' + itemsId.map((el) => `id=${el}`).join('&')

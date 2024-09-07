@@ -120,9 +120,11 @@ const routes = createBrowserRouter([
       {
         path: 'profile',
         element: (
-          <MySuspense>
-            <ProfileLayout />
-          </MySuspense>
+          <ProtectedRoutes>
+            <MySuspense>
+              <ProfileLayout />
+            </MySuspense>
+          </ProtectedRoutes>
         ),
         children: [
           { index: true, element: <Profile /> },
